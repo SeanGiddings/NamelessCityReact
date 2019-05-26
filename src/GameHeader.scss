@@ -1,0 +1,18 @@
+
+.GameHeader {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        color: #fff7e6;
+        font-family: 'Raleway', sans-serif;
+        height: 150px;
+    }
+
+    &__title {
+        h1 {
+            margin: 5px;
+        }
+    }
+}
