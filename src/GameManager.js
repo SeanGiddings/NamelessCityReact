@@ -18,7 +18,7 @@ class GameManager extends Component {
   nextScene = () => {
     console.log("test");
     this.setState(state => ({
-      scene: state.scene++,
+      scene: state.scene + 1,
     }));
   }
 
@@ -29,7 +29,7 @@ class GameManager extends Component {
       <div className="GameManager">
         <GameHeader scene={scene}></GameHeader>
         <Storyboard scene={scene}></Storyboard>
-        <Choices nextScene={this.nextScene}></Choices>
+        <Choices scene={scene} nextScene={this.nextScene}></Choices>
       </div>
     );
   }

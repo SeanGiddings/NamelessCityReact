@@ -14,7 +14,7 @@ class Storyboard extends Component {
     return (
       <div className="Storyboard__container">
         <div className="Storyboard__text">
-            
+          Yo this is scene one. ummmmm you wanna go see that spooky city?
         </div>
       </div>
     );
