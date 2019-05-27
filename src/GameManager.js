@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import './GameManager.css';
 import GameHeader from './GameHeader';
 import Storyboard from './Storyboard';
 
-class App extends Component {
+class GameManager extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="GameManager">
         <GameHeader></GameHeader>
-        <Storyboard></Storyboard>
+        <Storyboard propName="test"></Storyboard>
       </div>
     );
   }
 }
 
-export default App;
+export default GameManager;
