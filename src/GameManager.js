@@ -16,7 +16,6 @@ class GameManager extends Component {
   }
 
   nextScene = () => {
-    console.log("test");
     this.setState(state => ({
       scene: state.scene + 1,
     }));

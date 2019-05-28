@@ -12,8 +12,23 @@ class Choices extends Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log("this DID update!")
+  componentDidUpdate(prevProps) {
+    const {scene} = this.props;
+    
+    if (prevProps.scene !== scene) {
+      if (scene == 1) {
+          this.updateChoices( 'hey what\'s up', 'uhhh this is the second string');
+      } else if (scene == 2) {
+          this.updateChoices( 'third string', 'this is another button');
+      }
+    }
+  }
+
+  updateChoices(choiceOne, choiceTwo) {
+    this.setState(state => ({
+      firstChoice: choiceOne,
+      secondChoice: choiceTwo
+    }));
   }
 
   render() {

@@ -11,10 +11,11 @@ class Storyboard extends Component {
   }
 
   render() {
+    const {mainStoryText} = this.props;
     return (
       <div className="Storyboard__container">
         <div className="Storyboard__text">
-          Yo this is scene one. ummmmm you wanna go see that spooky city?
+          replace me
         </div>
       </div>
     );
